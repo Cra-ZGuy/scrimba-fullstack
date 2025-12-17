@@ -1,0 +1,57 @@
+name: Deploy via Tunnel
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Build
+        run: node build.js
+
+      - name: Install Rsync
+        run: sudo apt-get update && sudo apt-get install -y rsync
+
+      - name: Configure SSH Jump Host
+        env:
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+          OVH_HOST: ${{ secrets.OVH_HOST }}
+          OVH_USER: ${{ secrets.OVH_USER }}
+          HOME_USER: ${{ secrets.HOME_USER }}
+          PORT: ${{ secrets.PORT }}
+        run: |
+          mkdir -p ~/.ssh
+
+          echo "$SSH_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+
+          cat <<EOF > ~/.ssh/config
+          Host jump-host
+              HostName $OVH_HOST
+              User $OVH_USER
+              IdentityFile ~/.ssh/id_ed25519
+              StrictHostKeyChecking no
+
+          Host home
+              HostName localhost
+              User $HOME_USER
+              Port $PORT
+              ProxyJump jump-host
+              IdentityFile ~/.ssh/id_ed25519
+              StrictHostKeyChecking no
+          EOF
+
+      - name: Deploy to Home Server
+        run: rsync -avz --delete dist/ home:/var/www/scrimba/

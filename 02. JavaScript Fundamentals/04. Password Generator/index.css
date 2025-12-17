@@ -1,0 +1,217 @@
+:root {
+    --background-color: #ECFDF5;
+    --primary-color: #273549;
+    --secondary-color: #10B981;
+    --subheading-color: #6B7280;
+    --divider-color: #D5D4D8;
+    --generate-btn-hover-color: #059669;
+    --generate-btn-active-color: #047857;
+    --password-btn-hover-color: #1F2937;
+    --password-btn-active-color: #111827;
+    --theme-transition: background-color 0.3s ease-in-out;
+}
+
+:has(#theme-toggle:checked) {
+    --background-color: #1F2937;
+    --primary-color: #FFFFFF;
+    --subheading-color: #D5D4D8;
+    --divider-color: #2F3E53;
+    --generate-btn-hover-color: #34D399;
+    --generate-btn-active-color: #6EE7B7;
+    --password-btn-hover-color: #374151;
+    --password-btn-active-color: #4B5563;
+}
+
+.preload,
+.preload * {
+    transition: none !important;
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    transition: var(--theme-transition);
+}
+
+.checkbox {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    width: 1;
+    height: 1;
+    overflow: hidden;
+}
+
+.icon {
+    position: absolute;
+    opacity: 1;
+}
+
+.dark-icon {
+    opacity: 0;
+}
+
+#theme-toggle:checked~.light-icon {
+    opacity: 0;
+}
+
+#theme-toggle:checked~.dark-icon {
+    opacity: 1;
+}
+
+#theme-toggle-wrapper {
+    position: absolute;
+    width: 30px;
+    fill: var(--primary-color);
+    top: 10px;
+    right: 10px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 450px;
+}
+
+#heading {
+    color: var(--primary-color);
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: -0.05em;
+    max-width: 345px;
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#subheading {
+    color: var(--subheading-color);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#divider {
+    height: 1px;
+    background-color: var(--divider-color);
+    display: block;
+    margin: 35px 0px;
+    transition: var(--theme-transition);
+}
+
+#generate-btn {
+    background-color: var(--secondary-color);
+    width: fit-content;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 9px 16px;
+    border: 0;
+    border-radius: 6px;
+    margin-top: 35px;
+    transition: background-color 0.1s ease-in-out;
+}
+
+#generate-btn:hover {
+    background-color: var(--generate-btn-hover-color);
+}
+
+#generate-btn:active {
+    background-color: var(--generate-btn-active-color);
+}
+
+.highlight {
+    color: var(--secondary-color);
+}
+
+#passwords-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.password-btn {
+    text-align: center;
+    background-color: #273549;
+    color: #5DEF92;
+    width: 210px;
+    height: 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    border: 0;
+    border-radius: 6px;
+    margin: 0;
+    overflow: hidden;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.password-btn:hover {
+    background-color: var(--password-btn-hover-color);
+}
+
+.password-btn:active {
+    background-color: var(--password-btn-active-color);
+}
+
+#centering-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: -28px;
+}
+
+#copied {
+    text-align: center;
+    background-color: #273549;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    border: 0;
+    border-radius: 6px;
+    margin: 0;
+    padding: 6px 12px;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out;
+    box-shadow: 0px 5px 5px 0px #00000040;
+    opacity: 0;
+}
+
+#copied.copied-visible {
+    opacity: 1;
+}
+
+@media (max-width: 550px) {
+    #main {
+        width: 100%;
+        padding: 0 50px;
+    }
+
+    #heading {
+        width: 100%;
+    }
+
+    #passwords-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .password-btn {
+        width: 100%;
+    }
+}

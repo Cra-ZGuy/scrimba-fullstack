@@ -1,0 +1,42 @@
+[
+    {
+        "localPath": "01. HTML and CSS Fundamentals/01. Google/",
+        "remotePath": "html-css/google"
+    },
+    {
+        "localPath": "01. HTML and CSS Fundamentals/02. Business Card/",
+        "remotePath": "html-css/business-card"
+    },
+    {
+        "localPath": "01. HTML and CSS Fundamentals/03. Space Exploration/",
+        "remotePath": "html-css/space-exploration"
+    },
+    {
+        "localPath": "01. HTML and CSS Fundamentals/04. Birthday Website/",
+        "remotePath": "html-css/birthday"
+    },
+    {
+        "localPath": "01. HTML and CSS Fundamentals/05. Hometown Homepage/",
+        "remotePath": "html-css/hometown"
+    },
+    {
+        "localPath": "02. JavaScript Fundamentals/01. Counter App/",
+        "remotePath": "js/counter-app"
+    },
+    {
+        "localPath": "02. JavaScript Fundamentals/02. Basketball Scoreboard/",
+        "remotePath": "js/scoreboard"
+    },
+    {
+        "localPath": "02. JavaScript Fundamentals/03. Blackjack Game/",
+        "remotePath": "js/blackjack"
+    },
+    {
+        "localPath": "02. JavaScript Fundamentals/04. Password Generator/",
+        "remotePath": "js/password-generator"
+    },
+    {
+        "localPath": "02. JavaScript Fundamentals/05. Chrome Extension/",
+        "remotePath": "js/chrome-extension"
+    }
+]
