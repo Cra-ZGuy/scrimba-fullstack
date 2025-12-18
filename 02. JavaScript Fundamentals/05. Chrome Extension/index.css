@@ -1,0 +1,67 @@
+:root {
+    --greenish: #5f9341;
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 400px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+a {
+    color: var(--greenish);
+}
+
+#input-el {
+    border: var(--greenish) solid 1px;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#input-btn, #tab-btn {
+    background-color: var(--greenish);
+    border: var(--greenish) solid 1px;
+    padding: 10px 20px;
+    font-weight: 800;
+    color: white;
+}
+
+#input-btn:hover, #tab-btn:hover {
+    filter: brightness(110%);
+}
+
+#input-btn:active, #tab-btn:active {
+    filter: brightness(120%);
+}
+
+#delete-btn {
+    background-color: white;
+    border: var(--greenish) solid 1px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-weight: 800;
+    color: var(--greenish);
+}
+
+#delete-btn:hover {
+    filter: brightness(90%);
+}
+
+#delete-btn:active {
+    filter: brightness(80%);
+}
