@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="title-el">Metric/Imperial Unit Conversion</h1>
+        <input type="number" autocomplete="off" id="unit-input-el" min="0" max="99"
+            oninput="if(this.value.length > 2) this.value = this.value.slice(0, 2);">
+        <button id="convert-btn">Convert</button>
+    </div>
+    <div id="conversions">
+        <div class="conversion">
+            <h3 class="conversion-title">Length (Meter/Feet)</h3>
+            <p class="conversion-desc" id="conversion-length"></p>
+        </div>
+        <div class="conversion">
+            <h3 class="conversion-title">Volume (Liters/Gallons)</h3>
+            <p class="conversion-desc" id="conversion-volume"></p>
+        </div>
+        <div class="conversion">
+            <h3 class="conversion-title">Mass (Kilograms/Pounds)</h3>
+            <p class="conversion-desc" id="conversion-mass"></p>
+        </div>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>

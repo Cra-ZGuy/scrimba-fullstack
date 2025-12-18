@@ -1,0 +1,125 @@
+:root {
+    --purple: #6943FF;
+    --light-purple: #B295FF;
+    --dark-purple: #5A537B;
+    --gray: #3D3D3D;
+    --light-gray: #F4F4F4;
+}
+
+body {
+    background-color: var(--light-gray);
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+#header {
+    background-color: var(--purple);
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-el {
+    margin-top: 35px;
+    margin-bottom: 0;
+    padding: 0 50px;
+    color: white;
+    font-size: 28px;
+    font-size: 38px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+
+#unit-input-el {
+    margin-top: 30px;
+    background-color: var(--purple);
+    color: white;
+    font-size: 58px;
+    font-size: 58px;
+    font-weight: 800;
+    text-align: center;
+    width: 120px;
+    height: 80px;
+    border: 2px solid var(--light-purple);
+    border-radius: 5px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+#unit-input-el::-webkit-outer-spin-button,
+#unit-input-el::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+#unit-input-el[type=number] {
+  -moz-appearance: textfield;
+}
+
+#unit-input-el:focus {
+    outline: none;
+}
+
+#convert-btn {
+    margin-top: 25px;
+    margin-bottom: 35px;
+    background-color: white;
+    color: var(--gray);
+    border: 0;
+    border-radius: 5px;
+    padding: 9px 28px;
+    font-size: 24px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Only apply hover effects to devices that support true hovering */
+@media (hover: hover) {
+    #convert-btn:hover {
+        filter: brightness(90%);
+    }
+}
+
+#convert-btn:active {
+    filter: brightness(80%);
+}
+
+#conversions {
+    margin-top: 35px;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 10px 50px 50px 50px;
+}
+
+.conversion {
+    background-color: white;
+    padding: 30px 50px 20px 50px;
+    width: 100%;
+    min-width: 250px;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.conversion-title {
+    color: var(--dark-purple);
+    font-size: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.conversion-desc {
+    color: var(--gray);
+    font-size: 14px;
+    font-size: 20px;
+    font-weight: 400;
+}

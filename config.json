@@ -38,5 +38,9 @@
     {
         "localPath": "02. JavaScript Fundamentals/05. Chrome Extension/",
         "remotePath": "js/chrome-extension"
+    },
+    {
+        "localPath": "02. JavaScript Fundamentals/06. Unit Converter/",
+        "remotePath": "js/unit-converter"
     }
 ]
