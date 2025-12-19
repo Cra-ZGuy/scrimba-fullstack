@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #2b283a;
+}
+
+/* Typography */
+
+h1 {
+    color: whitesmoke;
+    font-size: 2.25rem;
+    margin: 0;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+h3 {
+    color: #d0aaff;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+p {
+    line-height: 1.4375rem;
+}
+
+/* Links */
+
+a {
+    text-decoration: underline dotted;
+    color: #ef5839;
+}
+
+a:hover,
+a:active {
+    color: #d4b44c;
+}
+
+/* Layout */
+
+header {
+    padding: 2.8125rem 0;
+    background-color: #5f29a3;
+}
+
+section {
+    padding: 2.8125rem 0;
+}
+
+.container {
+    width: 620px;
+    margin: 0 auto;
+}
+
+.main-image {
+    width: 100%;
+}
+
+.section-two {
+    background-color: #5f29a3;
+    color: whitesmoke;
+}
+
+.feature-image {
+    width: 300px;
+    border-radius: 4.6px;
+}
+
+.section-two-image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    padding: 0.625rem 1.1875rem;
+    border-radius: 4.6px;
+    font-weight: 500;
+    border: 0;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.dark-btn {
+    background-color: #5f29a3;
+    color: whitesmoke;
+}
+
+.med-btn {
+    background-color: #f0e0ff;
+    color: #5f29a3;
+}
+
+.light-btn {
+    background-color: whitesmoke;
+    color: #5f29a3;
+}
+
+.button:hover, .button:active {
+    background-color: #f3e885;
+    color: #2b283a;
+}
+
+footer {
+    color: #5f29a3;
+    padding: 2.8125rem 0;
+    text-align: center;
+}

@@ -42,5 +42,9 @@
     {
         "localPath": "02. JavaScript Fundamentals/06. Unit Converter/",
         "remotePath": "js/unit-converter"
+    },
+    {
+        "localPath": "03. Essential CSS/01. NFT Site/",
+        "remotePath": "essential-css/nft-site"
     }
 ]
