@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3125rem;
+    font-weight: 300;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+    margin-top: 0;
+}
+
+h1 span,
+h2 span {
+    font-weight: 900;
+    display: block;
+    color: #99D930;
+}
+
+h1 {
+    font-size: 3.75rem;
+}
+
+h1 span {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 2.625rem;
+    border-top: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
+    padding: 2rem 0;
+    margin: 0 0 2rem 0;
+}
+
+h2 span {
+    font-size: 3.75rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+a {
+    color: #99D930;
+    font-weight: 900;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.dark-section a:hover,
+.dark-section a:focus {
+    color: #BBFB52
+}
+
+a:hover,
+a:focus {
+    color: #131313;
+}
+
+.small-text {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.container {
+    max-width: 35.625rem;
+    padding: 0 3rem;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+}
+
+header,
+section {
+    padding: 6.25rem 0;
+    background-color: #FFF;
+    color: #252525;
+}
+
+.dark-section {
+    background-color: #252525;
+    color: #FFF;
+}
+
+.button {
+    background-color: #99D930;
+    color: #252525;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #252525;
+    color: #FFF;
+}
+
+.dark-section .button:hover,
+.dark-section .button:focus {
+    background-color: #FFF;
+    color: #252525;
+}
+
+.name,
+time {
+    color: #99D930;
+    font-weight: 900;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

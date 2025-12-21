@@ -46,5 +46,9 @@
     {
         "localPath": "03. Essential CSS/01. NFT Site/",
         "remotePath": "essential-css/nft-site"
+    },
+    {
+        "localPath": "03. Essential CSS/02. Portfolio/",
+        "remotePath": "essential-css/portfolio"
     }
 ]
