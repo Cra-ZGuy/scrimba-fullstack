@@ -13,11 +13,11 @@
     },
     {
         "localPath": "01. HTML and CSS Fundamentals/04. Birthday Website/",
-        "remotePath": "html-css/birthday"
+        "remotePath": "html-css/birthday-website"
     },
     {
         "localPath": "01. HTML and CSS Fundamentals/05. Hometown Homepage/",
-        "remotePath": "html-css/hometown"
+        "remotePath": "html-css/hometown-homepage"
     },
     {
         "localPath": "02. JavaScript Fundamentals/01. Counter App/",
@@ -25,11 +25,11 @@
     },
     {
         "localPath": "02. JavaScript Fundamentals/02. Basketball Scoreboard/",
-        "remotePath": "js/scoreboard"
+        "remotePath": "js/basketball-scoreboard"
     },
     {
         "localPath": "02. JavaScript Fundamentals/03. Blackjack Game/",
-        "remotePath": "js/blackjack"
+        "remotePath": "js/blackjack-game"
     },
     {
         "localPath": "02. JavaScript Fundamentals/04. Password Generator/",
@@ -50,5 +50,9 @@
     {
         "localPath": "03. Essential CSS/02. Portfolio/",
         "remotePath": "essential-css/portfolio"
+    },
+    {
+        "localPath": "03. Essential CSS/03. Instagram Clone/",
+        "remotePath": "essential-css/instagram-clone"
     }
 ]
