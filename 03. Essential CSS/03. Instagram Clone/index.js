@@ -55,9 +55,9 @@ class InstagramClone {
         InstagramClone.updateToggle(toggle, false, true);
     }
 
-    static updateToggle(toggle, setLiked, isManual) {
+    static updateToggle(toggle, setToggle, isManual) {
         const wasPressed = toggle.getAttribute('aria-pressed') === 'true';
-        const isPressed = isManual ? !wasPressed : setLiked;
+        const isPressed = isManual ? !wasPressed : setToggle;
         toggle.setAttribute('aria-pressed', isPressed);
 
         const classSet = new Set(toggle.classList);
@@ -109,6 +109,15 @@ class InstagramClone {
                     `;
             }
         } else if (classSet.has('save')) {
+            const id = toggle.closest('article').id;
+            const keySaved = `${id}-saved`;
+
+            if (isPressed && isManual) {
+                localStorage.setItem(keySaved, "true");
+            } else if (!isPressed && isManual) {
+                localStorage.setItem(keySaved, "false");
+            }
+
             if (isPressed) {
                 toggle.innerHTML = `
                     <svg aria-label="Remove" fill="currentColor" height="24" role="img" viewBox="0 0 24 24"
@@ -141,6 +150,7 @@ class InstagramClone {
             }
 
             const hasLiked = localStorage.getItem(`${post.id}-liked`) === "true" ? true : false;
+            const hasSaved = localStorage.getItem(`${post.id}-saved`) === "true" ? true : false;
 
             const commentCount = localStorage.getItem(`${post.id}-comments`);
 
@@ -151,9 +161,11 @@ class InstagramClone {
             this.main.innerHTML += this.getPostHTML(post);
 
             const postEl = this.main.querySelector(`#${CSS.escape(post.id)}`);
-            const toggle = postEl.querySelector(".like");
+            const toggleLike = postEl.querySelector(".like");
+            const toggleSave = postEl.querySelector(".save");
 
-            this.updateToggle(toggle, hasLiked, false);
+            this.updateToggle(toggleLike, hasLiked, false);
+            this.updateToggle(toggleSave, hasSaved, false);
         }
     }
 
