@@ -54,5 +54,9 @@
     {
         "localPath": "03. Essential CSS/03. Instagram Clone/",
         "remotePath": "essential-css/instagram-clone"
+    },
+    {
+        "localPath": "03. Essential CSS/04. Coworking Space Site/",
+        "remotePath": "essential-css/coworking-space-site"
     }
 ]

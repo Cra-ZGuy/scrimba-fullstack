@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Typography */
+
+.logo {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+h1 {
+    max-width: 550px;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 1.875rem 1.5625rem;
+}
+
+.caption {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0 1.5625rem;
+    color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+/* Header */
+
+header {
+    background-color: #282828;
+    margin: 0;
+}
+
+ul {
+    font-size: 1.125rem;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 1.5625rem;
+    gap: .625rem;
+}
+
+.icon {
+    width: 1.5625rem;
+}
+
+.align-right {
+    margin: 0 0 0 auto;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item {
+    position: relative;
+}
+
+.item-img {
+    max-width: 600px;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .item-img {
+        width: 100%;
+    }
+}
+
+.img-banner {
+    padding: .625rem;
+    background-color: #cd6858;
+    color: whitesmoke;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+button {
+    border: none;
+    background-color: #cd6858;
+    color: whitesmoke;
+    padding: .625rem .9375rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.chatbox-bg {
+    background-color: #dda15e;
+    width: 2.5rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #999;
+    display: flex;
+    padding: .625rem;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: .375rem;
+    right: .375rem;
+    z-index: 1;
+}
+
+.chatbox-img {
+    width: 100%;
+    z-index: 2;
+}
