@@ -72,6 +72,7 @@ main {
 
 .item {
     position: relative;
+    max-width: 600px;
 }
 
 .item-img {
