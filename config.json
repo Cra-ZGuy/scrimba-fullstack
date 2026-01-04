@@ -58,5 +58,9 @@
     {
         "localPath": "03. Essential CSS/04. Coworking Space Site/",
         "remotePath": "essential-css/coworking-space-site"
+    },
+    {
+        "localPath": "04. Essential JavaScript/01. Cookie Consent/",
+        "remotePath": "essential-js/cookie-consent"
     }
 ]
