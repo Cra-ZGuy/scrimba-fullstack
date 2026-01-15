@@ -66,5 +66,9 @@
     {
         "localPath": "04. Essential JavaScript/02. Meme App/",
         "remotePath": "essential-js/meme-app"
+    },
+    {
+        "localPath": "04. Essential JavaScript/03. X Clone/",
+        "remotePath": "essential-js/x-clone"
     }
 ]
