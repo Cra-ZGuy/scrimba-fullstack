@@ -70,5 +70,9 @@
     {
         "localPath": "04. Essential JavaScript/03. X Clone/",
         "remotePath": "essential-js/x-clone"
+    },
+    {
+        "localPath": "04. Essential JavaScript/04. Restaurant Ordering App/",
+        "remotePath": "essential-js/restaurant-ordering-app"
     }
 ]

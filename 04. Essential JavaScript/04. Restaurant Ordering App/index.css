@@ -1,0 +1,357 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 2rem;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 2.4375rem;
+    line-height: 1.5rem;
+}
+
+h2 {
+    font-size: 1.4013rem;
+    line-height: .8625rem;
+}
+
+/* Header */
+
+header {
+    position: relative;
+    width: 100%;
+    height: 10.4375rem;
+    overflow: hidden;
+}
+
+#header-text {
+    display: flex;
+    flex-direction: column;
+    padding: 2.875rem;
+    position: relative;
+    z-index: 1;
+    color: white;
+    white-space: nowrap;
+}
+
+#header-title {
+    font-size: 2.4375rem;
+    line-height: 1.5rem;
+    margin-top: 0;
+}
+
+#header-description {
+    font-size: 1.4013rem;
+    line-height: .8625rem;
+    margin-top: 0;
+}
+
+#header-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Menu Items */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.875rem;
+    width: min(31.75rem, max(calc(100% - 2.875rem), 18.75rem));
+    overflow: hidden;
+    margin-top: 4.1875rem;
+}
+
+.menu-item {
+    height: 8.75rem;
+    display: flex;
+    border-bottom: .0625rem solid #D2D2D2;
+}
+
+.menu-item-image-text {
+    width: 6rem;
+    font-size: 4.92rem;
+    line-height: 6.15rem;
+    margin: 0;
+}
+
+.menu-item-info {
+    margin: 0 0 0 clamp(0.5rem, calc(4vw + .125rem), 1.5rem);
+    padding-right: 1rem;
+}
+
+.menu-item-name {
+    font-size: 1.75rem;
+    line-height: 1.05rem;
+    margin: 0.5rem 0;
+}
+
+.menu-item-ingredients {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: #8B8B8B;
+    margin: 0.5rem 0;
+}
+
+.menu-item-price {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin: 1rem 0;
+}
+
+.menu-item-add-btn {
+    margin: 0 0 auto auto;
+    width: 3.125rem;
+    height: 3.125rem;
+    border: .0938rem solid #DEDEDE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    flex-shrink: 0;
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+@media (hover: hover) {
+    .menu-item-add-btn:hover {
+        background-color: #DEDEDE;
+    }
+}
+
+.menu-item-add-btn:active {
+    background-color: #D2D2D2;
+}
+
+
+.fa-plus {
+    color: #3C3C3C;
+    font-size: 2rem;
+    transform: translate(0.0125rem, -0.0875rem);
+}
+
+.fa-plus * {
+    width: 2rem;
+    height: 2rem;
+    display: block;
+}
+
+/* Order */
+
+#order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(31.75rem, max(calc(100% - 2.875rem), 18.75rem));
+    overflow: hidden;
+}
+
+#order-title {
+    font-size: 1.75rem;
+    line-height: 1.05rem;
+    margin: 2.8125rem 0;
+}
+
+#order-items {
+    width: 100%;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+}
+
+.order-item * {
+    margin: 0;
+}
+
+.order-item-name {
+    font-size: 1.75rem;
+    line-height: 1.05rem;
+}
+
+.order-item-remove {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    margin-left: .125rem;
+    color: #BBBBBB;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    background-color: #00000000;
+}
+
+.order-item-price {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    margin-left: auto;
+}
+
+.divider {
+    color: #393333;
+    height: .125rem;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+#order-total {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: end;
+}
+
+#order-total * {
+    margin: 0;
+}
+
+#order-total-text {
+    font-size: 1.75rem;
+    line-height: 1.5rem;
+}
+
+#order-total-price {
+    font-size: 1.5rem;
+    line-height: 1rem;
+}
+
+#order-complete-btn {
+    background-color: #16DB99;
+    border-radius: .125rem;
+    width: 100%;
+    height: 3.75rem;
+    color: #FFF;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border: none;
+    margin-top: 2.8125rem;
+}
+
+@media (hover: hover) {
+    #order-complete-btn:hover {
+        background-color: #16cc8f;
+    }
+}
+
+#order-complete-btn:active {
+    background-color: #12bd84;
+}
+
+/* Pay */
+
+#pay-modal-overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+#pay-modal {
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    width: min(31.75rem, max(calc(100% - 2.875rem), 18.75rem));
+    z-index: 2;
+    font-family: Verdana, Tahoma, sans-serif;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF;
+    border-radius: .25rem;
+    box-shadow: 0 0 15.9375rem 0 #00000080;
+    border: none;
+}
+
+#pay-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.945rem;
+}
+
+.pay-input {
+    width: 100%;
+    height: 4.375rem;
+    margin-top: 1.5rem;
+    border: .0813rem solid #757575;
+    background-color: #FFF;
+    padding-left: 1.5rem;
+    border-radius: .25rem;
+    font-size: 1.25rem;
+    line-height: 1.945rem;
+}
+
+#pay-btn {
+    background-color: #16DB99;
+    border-radius: .25rem;
+    width: 100%;
+    height: 3.75rem;
+    color: #FFF;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.945rem;
+    border: none;
+    margin-top: 2.8125rem;
+}
+
+@media (hover: hover) {
+    #pay-btn:hover {
+        background-color: #16cc8f;
+    }
+}
+
+#pay-btn:active {
+    background-color: #12bd84;
+}
+
+/* Thanks */
+
+#thanks {
+    width: 100%;
+    height: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ECFDF5;
+    font-size: clamp(1rem, 7vw, 2rem);
+    line-height: 1.05rem;
+    color: #065F46;
+    margin-top: 2.8125rem;
+}
+
+/* Utilities */
+
+.hidden {
+    display: none !important;
+}
+
+.no-scroll {
+    overflow: hidden !important;
+}
