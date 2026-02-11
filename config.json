@@ -74,5 +74,9 @@
     {
         "localPath": "04. Essential JavaScript/04. Restaurant Ordering App/",
         "remotePath": "essential-js/restaurant-ordering-app"
+    },
+    {
+        "localPath": "05. Responsive Design/01. Responsive Layouts/",
+        "remotePath": "responsive-design/responsive-layouts"
     }
 ]
