@@ -1,0 +1,183 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #404040;
+    margin: 0;
+}
+
+/* =================
+    Typography 
+   ================= */
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-shadow: 0 2px #816fca;
+}
+
+h2 {
+    font-size: 2.25rem;
+    margin: 0.166em 0;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.35;
+}
+
+.beta-text {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.subheading {
+    color: #575757;
+    font-weight: 900;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.top-text {
+    order: -1;
+    margin: 0 auto;
+    font-size: 0.875rem;
+    font-weight: 900;
+    padding-top: 0.25em;
+    border-top: 5px solid;
+}
+
+.fine-print {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #858585;
+}
+
+/* =================
+    Intro
+   ================= */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1.5em 2em;
+    min-height: 250px;
+    color: #fff;
+    background: #9480e4 url("images/intro-bg.png") center / cover no-repeat;
+}
+
+/* ====================
+    Main content
+   ==================== */
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5em 2em 0 2em;
+}
+
+.img-main {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.main-content p,
+form {
+    max-width: 450px;
+}
+
+.main-content form {
+    width: 100%;
+}
+
+.main-content form input {
+    font-family: inherit;
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    border: 2px solid #d1d5db;
+    border-radius: 5px;
+    outline: none;
+}
+
+.main-content form input:focus {
+    border: 2px solid #8a71ec;
+    background-color: #e6e8ec;
+}
+
+.btn {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    width: 100%;
+    padding: 1em 2em;
+    font-family: inherit;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #8a71ec;
+    color: #fff;
+    margin-top: 1em;
+}
+
+.btn-primary:focus {
+    outline: none;
+    border: 2px solid #8a71ec;
+    background: #b7a7f6;
+}
+
+/* =================
+    Form
+   ================= */
+
+
+/* =================
+    Media queries 
+   ================= */
+
+@media (min-width: 576px) {
+    body {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 2.625rem;
+    }
+
+    .beta-text {
+        font-size: 1.25rem;
+    }
+
+    .intro,
+    .main-content {
+        flex: 1;
+    }
+
+    .main-content {
+        height: 100vh;
+        padding-top: 0;
+        justify-content: center;
+    }
+}
+
+@media (hover: hover) {
+    .btn-primary:hover {
+        background: #b7a7f6;
+    }
+}

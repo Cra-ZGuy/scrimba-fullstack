@@ -78,5 +78,9 @@
     {
         "localPath": "05. Responsive Design/01. Responsive Layouts/",
         "remotePath": "responsive-design/responsive-layouts"
+    },
+    {
+        "localPath": "05. Responsive Design/02. Product Page/",
+        "remotePath": "responsive-design/product-page"
     }
 ]
