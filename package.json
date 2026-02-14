@@ -7,6 +7,7 @@
     "type": "commonjs",
     "main": "build.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "node build.js",
+        "build-prod": "act -W .github/workflows/deploy.yml --secret-file .env --rm"
     }
 }
