@@ -86,5 +86,9 @@
     {
         "localPath": "05. Responsive Design/03. CSS Grid/",
         "remotePath": "responsive-design/css-grid"
+    },
+    {
+        "localPath": "05. Responsive Design/04. Learning Journal/",
+        "remotePath": "responsive-design/learning-journal"
     }
 ]
