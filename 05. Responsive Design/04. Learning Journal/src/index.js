@@ -5,7 +5,11 @@ class LearningJournal {
     static blogsLoaded = 0;
 
     static init() {
-        if (window.location.pathname.endsWith("index.html")) {
+        const isHomePage = window.location.pathname.endsWith("/") ||
+            window.location.pathname.endsWith("index.html") ||
+            window.location.pathname === "";
+
+        if (isHomePage) {
             this.loadBlogs(6);
         } else {
             this.loadBlogs(3, true);
