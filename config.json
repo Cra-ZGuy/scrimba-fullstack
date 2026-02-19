@@ -94,5 +94,9 @@
     {
         "localPath": "06. APIs and Async JavaScript/01. Intro to APIs/",
         "remotePath": "apis-and-async-js/intro-to-apis"
+    },
+    {
+        "localPath": "06. APIs and Async JavaScript/02. URLs and REST/",
+        "remotePath": "apis-and-async-js/urls-and-rest"
     }
 ]
