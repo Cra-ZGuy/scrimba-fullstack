@@ -90,5 +90,9 @@
     {
         "localPath": "05. Responsive Design/04. Learning Journal/",
         "remotePath": "responsive-design/learning-journal"
+    },
+    {
+        "localPath": "06. APIs and Async JavaScript/01. Intro to APIs/",
+        "remotePath": "apis-and-async-js/intro-to-apis"
     }
 ]
